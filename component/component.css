@@ -1,0 +1,121 @@
+/* ---------- ACCORDION ----------- */
+    /* accordion container */
+    .cus-accordion {
+      position: relative;
+      /* CUSTOM STYLE BELOW */
+      /* width: 400px; */
+    }
+
+    /* accordion button */
+    .cus-accordion > button {
+      width: 100%;
+      text-align: left;
+      background-color: #fff;
+      color:black;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      padding: 24px 0;
+
+    }
+
+    /* accordion button symbol */
+    .cus-accordion > button::after {
+      content: '\2212'; /* - */
+      position: absolute;
+      width: 10px;
+      right: 0px;
+      transition: all .2s ease-out;
+    }
+    
+    /* accordion button symbol explanded */
+    .cus-accordion.collapsed > button::after {
+      content: '\002B'; /* + */
+      transform: rotate(180deg);
+    }
+
+    /* accordion body */
+    .cus-accordion > .accordion-body {
+      padding: 0 18px;
+      background-color: #fff;
+      overflow: hidden;
+      max-height: 500px;
+      transition: max-height .5s ease-out;
+      border-bottom: 1px solid #CCC;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* accordion body explanded */
+    .cus-accordion.collapsed > .accordion-body {
+      max-height: 0;
+    }
+    /* ------------- END ACCORDION ---------- */
+
+    /* --------------- CARD ---------------- */
+    /* hover effects for cards */
+    .cus-card {
+      position: relative;
+      /* max-width: 400px; */
+      cursor: pointer;
+    }
+
+    /* image container */
+    .cus-card .image {
+      width: 100%;
+    }
+
+    /* default image */
+    .cus-card .img-top {
+      z-index: 10;
+      position: relative;
+      width: 100%;
+    }
+    
+    /* hide image when hovered */
+    .cus-card:hover .img-top {
+      opacity: 0;
+    }
+
+    /* hover image */
+    .cus-card img.img-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9;
+      opacity: 1;
+      transition: opacity 0.1s ease-in-out;
+      -moz-transition: opacity 0.2s ease-in-out;
+      -webkit-transition: opacity 0.2s ease-in-out;
+      width: 100% !important;
+      object-fit: cover;
+    }
+
+    /* card badge */
+    .cus-card .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 11;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 4px;
+    }
+
+    .cus-card .badge .label, .cus-card .badge .available {
+      text-transform: uppercase;
+      padding: 2px 4px;
+      font-size: 0.7rem;
+    }
+
+    .cus-card .badge .label {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .cus-card .badge .available {
+      background-color: #ccc;
+      color: #000;
+    }
+    /* ------------- END CARD ---------------- */
