@@ -120,15 +120,16 @@
         display: flex;
         flex-wrap: wrap;
         gap: 7px;
+        justify-content: center;
        
 
         
     }
-    @media screen and (max-width:390px) {
+    /* @media screen and (max-width:390px) {
         .login-link-a{
             display: grid;
         }
-    }
+    } */
 
     .divider {
         text-align: center;
