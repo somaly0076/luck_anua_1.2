@@ -26,9 +26,9 @@ body,
 section {
 	min-height: 100%;
 	width: 100%;
-	/* min-width: 400px; */
 	overflow-x: hidden;
 	font-size: 16px;
+	min-width: 280px;
 }
 /*---------- common padding ----------*/
 .py-6 {
@@ -112,9 +112,9 @@ section {
 	box-shadow: 0 0 0 0 black inset;
 }
 a {
-    text-decoration: none !important;
-    color: #000;
-    }
+	text-decoration: none !important;
+	color: #000;
+}
 
 /*---------- End of comment style ----------*/
 
@@ -134,7 +134,43 @@ a {
 .bag-icon a {
 	color: black;
 }
+.login-logo {
+	list-style: none;
+	padding: 1rem;
+	margin: 0;
+	width: 100%;
+	height: 60px;
+}
 
+.login-logo a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.login-logo svg {
+	width: 20px;
+	height: 15px;
+}
+.login-logo > li {
+	/* margin-right: 12px; */
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.login-logo li p {
+	font-size: 10px;
+	margin-top: 2px;
+}
+@media screen and (max-width: 700px) {
+	.person-icon {
+		display: none;
+	}
+	.navigation-label {
+		max-width: 60px;
+	}
+}
 .offcanvas-subheader {
 	display: block;
 }
@@ -171,6 +207,7 @@ a {
 
 header {
 	z-index: 100;
+	position: fixed;
 }
 
 .header-wrapper {
@@ -198,6 +235,7 @@ header {
 .banner-label a {
 	z-index: 4;
 }
+
 .banner-container {
 	width: 500px;
 }
@@ -324,7 +362,7 @@ header {
 }
 
 .row > * {
-	padding-left: 0;
+	padding-left: 0px;
 }
 
 .accordion-header {
@@ -405,8 +443,12 @@ header {
 .mobile {
 	display: none;
 }
-
-@media screen and (max-width: 760px) {
+@media screen and (min-width: 700px) {
+	.login-logo {
+		display: none;
+	}
+}
+@media screen and (max-width: 700px) {
 	.sub-menu-component {
 		width: 400px !important;
 		padding-left: 0 !important;
@@ -424,7 +466,7 @@ header {
 
 		.row > * {
 			position: absolute;
-			padding: 10px;
+			padding: 16px 20px;
 		}
 	}
 
