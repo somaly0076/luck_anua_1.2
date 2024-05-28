@@ -8,7 +8,7 @@ td{
 /*---------- Here is the styling for title. ----------*/
 .title{
     text-align: center;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     font-weight: 300
 }
 

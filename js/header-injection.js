@@ -1,6 +1,7 @@
 const header = document.getElementById('header');
 
-header.innerHTML = `			<div class="promotion-banner text-bg-dark">
+header.innerHTML = `			
+<div class="promotion-banner text-bg-dark">
 <div class="container-wrapper">
   <h1 class="banner-label">
     <svg
