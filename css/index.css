@@ -94,6 +94,7 @@ html{
     letter-spacing: -0.5px;
     padding: 0;
     display: flex;
+    text-align: left;
 }
 
 * *::before,

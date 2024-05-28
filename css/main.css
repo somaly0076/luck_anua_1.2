@@ -141,27 +141,32 @@ a {
 	width: 100%;
 	height: 60px;
 }
-
-.login-logo a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 10px;
-}
-
-.login-logo svg {
-	width: 20px;
-	height: 15px;
-}
 .login-logo > li {
 	/* margin-right: 12px; */
 	display: flex;
 	width: 100%;
 	height: 100%;
+	align-items: center;
 }
-.login-logo li p {
+.login-logo li >  a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
 	font-size: 10px;
-	margin-top: 2px;
+}
+.login-logo svg {
+	width: 20px;
+	height: 15px;
+
+}
+
+.login-logo li > p  {
+	margin-top: 15px;
+}
+
+.login-logo li p a{
+	font-size: 10px;
 }
 @media screen and (max-width: 700px) {
 	.person-icon {
