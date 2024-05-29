@@ -371,11 +371,15 @@ circle .active {
 .video-section .card{
   border-radius: 10px;
 }
-
+.video-section .card-section-container{
+  min-width: 400px;
+  overflow-x: scroll;
+}
 .video-section .container{
   margin: auto;
-  max-width: 706px;
-  max-height: 403.39px;
+  max-height: 403.39px; 
+  width: 706px;
+
 }
 .video-section .product-info{
   position: absolute;
